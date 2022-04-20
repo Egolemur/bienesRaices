@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes raíces</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Logotipo de bienes raíces">
-                </a>
-                
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu responsive">
-                </div>
-
-                <div class="derecha">
-                    <img class="darkmode" src="build/img/dark-mode.svg" alt="Logo dark-mode">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php  
+    require 'includes/funciones.php';
+    incluirTemplate('header'); 
+?>
 
     <main class="contenedor seccion">
         <h2>Casas y depas en venta</h2>
@@ -62,7 +33,7 @@
                         </li>
                     </ul>
     
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver propiedad
                     </a>
     
@@ -96,7 +67,7 @@
                         </li>
                     </ul>
     
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver propiedad
                     </a>
     
@@ -130,7 +101,7 @@
                         </li>
                     </ul>
     
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver propiedad
                     </a>
     
@@ -164,7 +135,7 @@
                         </li>
                     </ul>
     
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver propiedad
                     </a>
     
@@ -198,7 +169,7 @@
                         </li>
                     </ul>
     
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver propiedad
                     </a>
     
@@ -232,7 +203,7 @@
                         </li>
                     </ul>
     
-                    <a href="anuncio.html" class="boton-amarillo-block">
+                    <a href="anuncio.php" class="boton-amarillo-block">
                         Ver propiedad
                     </a>
     
@@ -241,18 +212,9 @@
         </div> <!--Contenedor de Anuncios -->
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-
-        <p class="copyright">Todos losderechos reservados, 2022. &copy;</p>
-    </footer>
+    <?php  
+        incluirTemplate('footer'); 
+    ?>
 
     <script src="build/js/bundle.min.js"></script>    
 </body>
