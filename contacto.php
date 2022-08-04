@@ -1,5 +1,5 @@
 <?php  
-    require 'includes/funciones.php';
+    require 'includes/app.php';
     incluirTemplate('header'); 
 ?>
 
@@ -78,7 +78,3 @@
     <?php  
         incluirTemplate('footer'); 
     ?>
-
-    <script src="build/js/bundle.min.js"></script>    
-</body>
-</html>
